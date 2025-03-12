@@ -321,6 +321,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
+    init.sapphire.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \

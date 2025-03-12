@@ -28,8 +28,9 @@ import android.util.Log;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.lineageos.settings.gamebar.GameBarSettingsActivity;
-import org.lineageos.settings.gamebar.GameBarTileService;
+import org.lineageos.settings.gameoverlay.GameOverlaySettingsActivity;
+import org.lineageos.settings.gameoverlay.GameOverlayTileService;
+
 
 public final class TileHandlerActivity extends Activity {
     private static final String TAG = "TileHandlerActivity";
@@ -38,7 +39,8 @@ public final class TileHandlerActivity extends Activity {
     private static final Map<String, Class<?>> TILE_ACTIVITY_MAP = new HashMap<>();
 
     static {
-        TILE_ACTIVITY_MAP.put(GameBarTileService.class.getName(), GameBarSettingsActivity.class);
+
+        TILE_ACTIVITY_MAP.put(GameOverlayTileService.class.getName(), GameOverlaySettingsActivity.class);
     }
 
     @Override
