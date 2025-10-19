@@ -451,7 +451,7 @@ endif
 
 # Overlays Lineage
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-infinity
 
 # Device-specific settings
  PRODUCT_PACKAGES += \

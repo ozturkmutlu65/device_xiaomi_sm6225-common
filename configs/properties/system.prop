@@ -1,3 +1,9 @@
+# About phone definitions
+ro.product.marketname=Redmi Note 13 4G
+ro.infinity.soc=Snapdragon 685
+ro.infinity.display=1080 x 2400, AMOLED 120Hz
+ro.infinity.camera=108MP, 8MP, 2MP, 16MP
+
 # Brightness Curve
 persist.sys.brightness.low.gamma=true
 
