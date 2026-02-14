@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 TARGET_PROVIDES_AUDIO_HAL := true
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
