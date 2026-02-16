@@ -299,14 +299,6 @@ persist.device_config.mglru_native.lru_gen_config=all
 # Netflix
 vendor.netflix.bsp_rev=Q6115-31409-1
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf-hal.ver=2.3
-ro.vendor.qspm.enable=true
-vendor.pasr.activemode.enabled=false
-vendor.perf.framepacing.enable=1
-vendor.power.pasr.enabled=false
-
 # QCOM
 persist.vendor.qcomsysd.enabled=1
 
