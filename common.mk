@@ -389,7 +389,7 @@ PRODUCT_PACKAGES += \
 # Mlipay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mtdservice@1.0.vendor 
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor
 
 # NDK
 PRODUCT_PACKAGES += \
@@ -476,6 +476,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+$(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libperfmgr-ext-xiaomi)
 
 # QCC
 PRODUCT_PACKAGES += \
