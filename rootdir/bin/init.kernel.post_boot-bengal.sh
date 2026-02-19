@@ -204,10 +204,6 @@ echo $silver_early_upmigrate $gold_early_upmigrate > /proc/sys/walt/sched_early_
 # binder activity tasks
 echo 325 > /proc/sys/walt/walt_low_latency_task_threshold
 
-# cpuset parameters
-echo 0-1 > /dev/cpuset/background/cpus
-echo 0-2 > /dev/cpuset/system-background/cpus
-
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/walt/sched_boost
 
@@ -233,11 +229,12 @@ echo 1 > /sys/devices/system/cpu/cpufreq/policy4/walt/pl
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/walt/rtg_boost_freq
 
 # cpuset parameters
-echo 0-2 > /dev/cpuset/background/cpus
+echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
-echo 4-7 > /dev/cpuset/foreground/boost/cpus
-echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+echo 0-7 > /dev/cpuset/foreground/boost/cpus
+echo 0-7 > /dev/cpuset/foreground/cpus
 echo 0-7 > /dev/cpuset/top-app/cpus
+echo 60 > /dev/cpuset/foreground/cpu.uclamp_min
 
 # configure bus-dcvs
 bus_dcvs="/sys/devices/system/cpu/bus_dcvs"
