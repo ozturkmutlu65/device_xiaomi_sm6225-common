@@ -244,7 +244,7 @@ on boot
     chmod 0664 /sys/class/kgsl/kgsl-3d0/idle_timer
 
     # Audio
-    write /dev/cpuset/audio-app/cpus 4-7
+    write /dev/cpuset/audio-app/cpus 0-3
     chown system system /sys/class/thermal/thermal_message/boost
     chmod 0664 /sys/class/thermal/thermal_message/boost
     chown system system /sys/class/thermal/thermal_message/balance_mode
