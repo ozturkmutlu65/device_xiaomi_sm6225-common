@@ -217,6 +217,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-V1-ndk.vendor \
     libdrm.vendor
 
+# Fastcharge
+$(call inherit-product, packages/apps/FastCharge/fastcharge.mk)
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
