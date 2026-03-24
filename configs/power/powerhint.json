@@ -536,13 +536,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "465000000"
+      "Value": "785000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "1025000000"
+      "Value": "785000000"
     },
     {
       "PowerHint": "THERMAL_skin-therm-monitor_LIGHT",
