@@ -563,6 +563,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/qcom-caf/bootctrl \
     hardware/xiaomi \
+    hardware/qcom-caf/sm6225/dataipa \
     vendor/qcom/opensource/usb/etc
 
 # Telephony
