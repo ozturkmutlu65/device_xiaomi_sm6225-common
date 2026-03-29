@@ -538,6 +538,10 @@ vendor/lib64/libvndfwk_detect_jni.qti_vendor.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 
+# Required-QCC Protobuf
+system/lib64/libprotobuf-cpp-full.so:system_ext/lib64/libprotobuf-cpp-full-fromvendor.so
+system/lib64/libprotobuf-cpp-lite.so:system_ext/lib64/libprotobuf-cpp-lite-fromvendor.so
+
 # Seccomp
 vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
