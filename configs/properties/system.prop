@@ -63,6 +63,7 @@ persist.backup.ntpServer="0.pool.ntp.org"
 
 # Pre-Rendering
 ro.vendor.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
 persist.sys.default_scaling_gov=true
 
 # SdCardFS
