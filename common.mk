@@ -22,8 +22,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/xiaomi/sm6225-common/sm6225-common-vendor.mk)
 
-# Call the MiuiCamera setup
-$(call inherit-product-if-exists, device/xiaomi/miuicamera-sapphire/device.mk)
+# GoogleCamera
+$(call inherit-product-if-exists, vendor/xiaomi/GoogleCamera/config.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
